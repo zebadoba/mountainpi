@@ -138,6 +138,7 @@ enterSATURN35**
 > `silkecom`
 *  ###### password 
 > `&57wavesHUMAN`
+
 ![](assets/2021-02-06-16-08-13.png)
 ![](assets/2021-02-06-16-10-09.png)
 ### `OUT` = gpio pin is `ON`, and `IN` = gpio pin if `OFF`
@@ -278,6 +279,7 @@ docker-compose down --remove-orphans
 docker-compose up -d
 ``` 
 # Development by [wisehackermonkey](https://www.github.com/wisehackermonkey) 20210206
+### This repository will not be actively maintained
 
 # License
 # `MIT Copyright (c) 2021 zebadoba`

@@ -1,7 +1,7 @@
 # mountainpi
 ![slice1](assets/slice1.png)
 #### User documentation for Silke Com for Mountain Top Pi.
-Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attached.  The Mountain Top RPi OS build also includes a web based DVR interface with motion detection designed to use inexpensive USB web cameras.  It also includes a web based GPIO (General Purpose Input Output) page for toggleing GPIOs states to +5V or 0V.  The project was lead by the 😼Cat Lord Andy Record, with all devlopment by 👨‍💻 Oran Collins <[wisehackermonkey](https://www.github.com/wisehackermonkey)>.
+Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attached.  The Mountain Top RPi OS build also includes a web based DVR interface with motion detection designed to use inexpensive USB web cameras.  It also includes a web based GPIO (General Purpose Input Output) page for toggleing GPIOs states to 0V or +5v.  The project was lead by the 😼Cat Lord Andy Record, with all development by 👨‍💻 Oran Collins <[wisehackermonkey](https://www.github.com/wisehackermonkey)>.
 
 # Quick start:
 ### - [Connect Radio](#how-to-connect-to-web-based-sdr)
@@ -203,9 +203,7 @@ enterSATURN35**
 ```
 -----
 
-# Development by [wisehackermonkey](https://www.github.com/wisehackermonkey)
+# Development by [wisehackermonkey](https://www.github.com/wisehackermonkey) 20210206
 
 # License
-```bash
-MIT Copyright (c) 2021 zebadoba
-```
+# `MIT Copyright (c) 2021 zebadoba`

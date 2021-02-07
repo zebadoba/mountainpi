@@ -10,10 +10,10 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 ## Admin Guilds
 ### - [Change Hostname](#set-raspberry-pis-hostname)
 ### - [Change IP Address](#how-to-set-ip-address)
-### - [Change webio password](#how-to-set-webio-password)
+### - [Change webiopi password](#how-to-set-webiopi-password)
 ### - [Change Default RPI's password](#set-raspberry-pis-password)
 ### - [Change webcam password](###how-to-change-the-default-password)
-
+### - [Advanced](#advanced)
 
 # [DOWNLOAD RPI Image here](https://mega.nz/file/kE1nFCqJ#GcHeHwa-VjEAzYPnRlEISpjaMustKIwGJkCFJIEr_1M) valid as of (20210206)
 # How to connect to web based SDR 
@@ -169,6 +169,10 @@ enterSATURN35**
 
 # Set Raspberry pis password
 ### login to pi
+#### Default password OS
+```text
+4orderTERMS%%
+```
 ![](assets/2021-02-02-16-59-38.png)
 ### run `dietpi-config`
 ![](assets/2021-02-02-17-03-48.png)
@@ -182,6 +186,10 @@ enterSATURN35**
 
 # How to set IP address
 ### login to pi
+#### Default password OS
+```text
+4orderTERMS%%
+```
 ![](assets/2021-02-02-16-59-38.png)
 ### run `dietpi-config`
 ![](assets/2021-02-02-17-03-48.png)
@@ -195,14 +203,80 @@ enterSATURN35**
 ![](assets/2021-02-02-17-14-55.png)
 ### Done!
  
-# How to set webio password
+# How to set webiopi password
 ###  type in to rpi bash `webiopi-passwd`
 ![](assets/Screenshot_4.png)
-```bash
 
-```
 -----
+# Advanced 
+# How to stop/start webiopi
+```bash
+service webiopi start
+service webiopi stop
+service webiopi status
+service webiopi restart
 
+#  or alternatively
+systemctl start webiopi
+systemctl stop webiopi
+```
+### Advanced: edit the system service 
+```bash
+location of service
+/etc/systemd/system/webiopi.service
+```
+#### example [ source link: webiopi.service](https://raw.githubusercontent.com/doublebind/raspi/master/webiopi.service)
+```bash
+[Unit]
+Description = WebIOPi
+After = syslog.target network.target
+
+[Service]
+Type = simple
+WorkingDirectory = /usr/share/webiopi/htdocs
+ExecStart = /usr/bin/python3 -m webiopi -l /var/log/webiopi -c /etc/webiopi/config
+
+[Install]
+WantedBy = multi-user.target
+```
+### Fix issues with RTL-sdr server (pi side) not working
+#### Stop, Restart and build
+##### Clone docker-compose file 
+```bash
+git clone https://github.com/zebadoba/mountainpi.git
+cd mountainpi
+```
+##### or create one from scratch
+```bash
+nano docker-compose.yml
+
+-----docker-compose.yml------
+version: '3.3'
+services:
+    rtl-tcp:
+        privileged: true
+        devices:
+            - /dev/ttyAMA0
+        container_name: RTL-TCP
+        ports:
+            - '1234:1234'
+        restart: always
+        image: 'kosdk/rtl-tcp:latest'
+
+-----end------
+Press ctrl +x ,then 'y', then 
+enter
+```
+##### stop
+```bash
+docker rm -f RTL-TCP
+docker-compose down --remove-orphans
+```
+
+##### Start/Re-Start
+```bash
+docker-compose up -d
+``` 
 # Development by [wisehackermonkey](https://www.github.com/wisehackermonkey) 20210206
 
 # License

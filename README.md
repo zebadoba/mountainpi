@@ -1,7 +1,18 @@
 # mountainpi
-![slice1](/assets/slice1.png)
+![slice1](assets/slice1.png)
 #### User documentation for Silke Com for Mountain Top Pi.
-Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attached.  The Mountain Top RPi OS build also includes a web based DVR interface with motion detection designed to use inexpensive USB web cameras.  It also includes a web based GPIO (General Purpose Input Output) page for toggleing GPIOs states to +5V or 0V.  The project was lead by the 😼Cat Lord Andy Record, with all devlopment by 👨‍💻 Oran Collins,  [wisehackermonkey](https://www.github.com/wisehackermonkey).
+Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attached.  The Mountain Top RPi OS build also includes a web based DVR interface with motion detection designed to use inexpensive USB web cameras.  It also includes a web based GPIO (General Purpose Input Output) page for toggleing GPIOs states to +5V or 0V.  The project was lead by the 😼Cat Lord Andy Record, with all devlopment by 👨‍💻 Oran Collins <[wisehackermonkey](https://www.github.com/wisehackermonkey)>.
+
+# Quick start:
+### - [Connect Radio](#how-to-connect-to-web-based-sdr)
+### - [View Webcam](#how-to-connect-to-web-based-camera-system)
+### - [Toggle Raspberry pi pins (GPIO)](#how-to-connect-to-and-toggle-gpios)
+## Admin Guilds
+### - [Change Hostname](#set-raspberry-pis-hostname)
+### - [Change IP Address](#how-to-set-ip-address)
+### - [Change webio password](#how-to-set-webio-password)
+### - [Change Default RPI's password](#set-raspberry-pis-password)
+### - [Change webcam password](###how-to-change-the-default-password)
 
 
 # [DOWNLOAD RPI Image here](https://mega.nz/file/kE1nFCqJ#GcHeHwa-VjEAzYPnRlEISpjaMustKIwGJkCFJIEr_1M) valid as of (20210206)
@@ -11,39 +22,39 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 #### Install basic SDR# software: https://airspy.com/download/  
 #### Read this tutorial:      https://airspy.com/quickstart/  
 
-![](2021-02-06-15-38-26.png)
+![](assets/2021-02-06-15-38-26.png)
 ------
-![](2021-02-06-15-28-22.png)
+![](assets/2021-02-06-15-28-22.png)
 ### Extract and open `SDRSharp.exe`
-![](2021-02-06-15-30-11.png)
-![](2021-02-06-15-31-34.png)
-![](2021-02-06-15-31-53.png)
-![](2021-02-06-15-32-15.png)
-![](2021-02-06-15-32-52.png)
-![](2021-02-06-15-33-12.png)
-![](2021-02-06-15-33-33.png)
-![](2021-02-06-15-33-51.png)
-![](2021-02-06-15-34-09.png)
-![](2021-02-06-15-34-18.png)
-![](2021-02-06-15-34-43.png)
-![](2021-02-06-15-39-49.png)
-![](2021-02-06-15-35-19.png)
-![](2021-02-06-15-40-37.png)
+![](assets/2021-02-06-15-30-11.png)
+![](assets/2021-02-06-15-31-34.png)
+![](assets/2021-02-06-15-31-53.png)
+![](assets/2021-02-06-15-32-15.png)
+![](assets/2021-02-06-15-32-52.png)
+![](assets/2021-02-06-15-33-12.png)
+![](assets/2021-02-06-15-33-33.png)
+![](assets/2021-02-06-15-33-51.png)
+![](assets/2021-02-06-15-34-09.png)
+![](assets/2021-02-06-15-34-18.png)
+![](assets/2021-02-06-15-34-43.png)
+![](assets/2021-02-06-15-39-49.png)
+![](assets/2021-02-06-15-35-19.png)
+![](assets/2021-02-06-15-40-37.png)
 #### Almost finished!
-![](2021-02-06-15-41-36.png)
-![](2021-02-06-15-41-57.png)
-![](2021-02-06-15-42-17.png)
-![](2021-02-06-15-42-42.png)
-![](2021-02-06-15-43-17.png)
-![](2021-02-06-15-46-46.png)
+![](assets/2021-02-06-15-41-36.png)
+![](assets/2021-02-06-15-41-57.png)
+![](assets/2021-02-06-15-42-17.png)
+![](assets/2021-02-06-15-42-42.png)
+![](assets/2021-02-06-15-43-17.png)
+![](assets/2021-02-06-15-46-46.png)
 #### Set host to raspberry pi's ip address XXX.XXX.XXX.XXX for my network its 192.168.1.72
 ### Ip address = `192.168.1.72`
 ### Port = `1234`
 ### Sample rate = `0.25 MSPS`
-![](2021-02-06-15-47-48.png)
+![](assets/2021-02-06-15-47-48.png)
 ### Hit play, if everything was setup correctly you should hear radio static!
 ### Success!
-![](2021-02-06-15-59-45.png)
+![](assets/2021-02-06-15-59-45.png)
 
 ### Trouble shooting
 #### If you get an error like this one, 
@@ -55,7 +66,7 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 - check wifi/local system connectivity
 - Remember, only one person can login to a site at any time.  The SDR# software will hang if someone else is connected to the device.
 - NOTE: `sdr-sharp` often crashes if you dont hit `stop` before quitting as a habit always click stop before exiting 
-![](2021-02-06-15-49-01.png)
+![](assets/2021-02-06-15-49-01.png)
 
      -----------------
 <br>
@@ -77,7 +88,7 @@ http://192.168.2.72:8765/
 
 ```
 
-![](2021-02-06-14-21-26.png)
+![](assets/2021-02-06-14-21-26.png)
 ### Default admin account 
 #### Username
 ```bash
@@ -97,8 +108,8 @@ silkecom
 enterSATURN35**
 ```
 ### How to change the default password
-![](2021-02-06-14-26-01.png)
-![](2021-02-06-14-29-36.png)
+![](assets/2021-02-06-14-26-01.png)
+![](assets/2021-02-06-14-29-36.png)
 #### Note: "back up" before you make changes.
 
 ### If you set up motion detection, use email with the following SMTP info:
@@ -110,29 +121,39 @@ enterSATURN35**
 * From Address: site_name.rpicamera@silkecom.com
 * Attached Pictures Time Span: “5”
 
+
+<br>
+<br>
+------------------
+<br>
+<br>
+
 # How to connect to and toggle GPIOs
 
 ### Turn GPIOs on and off
-![](2021-02-06-16-07-30.png)
-![](2021-02-06-16-07-50.png)
+![](assets/2021-02-06-16-07-30.png)
+![](assets/2021-02-06-16-07-50.png)
 ### http://192.168.2.72:8000/app/gpio-header
 * ###### username 
 > `silkecom`
 *  ###### password 
 > `&57wavesHUMAN`
-![](2021-02-06-16-08-13.png)
-![](2021-02-06-16-10-09.png)
+![](assets/2021-02-06-16-08-13.png)
+![](assets/2021-02-06-16-10-09.png)
 ### `OUT` = gpio pin is `ON`, and `IN` = gpio pin if `OFF`
-![](2021-02-06-16-11-52.png)
+![](assets/2021-02-06-16-11-52.png)
 ### Reference
 * GPIO Info: https://www.raspberrypi.org/documentation/usage/gpio/
 * How to drive a relay: https://projects-raspberry.com/raspberry-pi-driving-a-relay-using-gpio/
 
-
------------
+<br>
+<br>
+------------------
+<br>
+<br>
 # Sys admin guide
 
-# Set Raspberry pi's Hostname
+# Set Raspberry pis Hostname
 ### login to pi
 ![](assets/2021-02-02-16-59-38.png)
 ### run `dietpi-config`
@@ -146,7 +167,7 @@ enterSATURN35**
  
 -----
 
-# Set Raspberry pi's password
+# Set Raspberry pis password
 ### login to pi
 ![](assets/2021-02-02-16-59-38.png)
 ### run `dietpi-config`
@@ -174,6 +195,12 @@ enterSATURN35**
 ![](assets/2021-02-02-17-14-55.png)
 ### Done!
  
+# How to set webio password
+###  type in to rpi bash `webiopi-passwd`
+![](assets/Screenshot_4.png)
+```bash
+
+```
 -----
 
 # Development by [wisehackermonkey](https://www.github.com/wisehackermonkey)

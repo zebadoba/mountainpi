@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    rtl-tcp:
+        privileged: true
+        devices:
+            - /dev/ttyAMA0
+        container_name: RTL-TCP
+        ports:
+            - '1234:1234'
+        restart: always
+        image: 'kosdk/rtl-tcp:latest'

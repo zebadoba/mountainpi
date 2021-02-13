@@ -22,39 +22,39 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 #### Install basic SDR# software: https://airspy.com/download/  
 #### Read this tutorial:      https://airspy.com/quickstart/  
 
-![](assets/2021-02-06-15-38-26.png)
+<img src="assets/2021-02-06-15-38-26.png" width="400">
 ------
-![](assets/2021-02-06-15-28-22.png)
+<img src="assets/2021-02-06-15-28-22.png" width="400">
 ### Extract and open `SDRSharp.exe`
-![](assets/2021-02-06-15-30-11.png)
-![](assets/2021-02-06-15-31-34.png)
-![](assets/2021-02-06-15-31-53.png)
-![](assets/2021-02-06-15-32-15.png)
-![](assets/2021-02-06-15-32-52.png)
-![](assets/2021-02-06-15-33-12.png)
-![](assets/2021-02-06-15-33-33.png)
-![](assets/2021-02-06-15-33-51.png)
-![](assets/2021-02-06-15-34-09.png)
-![](assets/2021-02-06-15-34-18.png)
-![](assets/2021-02-06-15-34-43.png)
-![](assets/2021-02-06-15-39-49.png)
-![](assets/2021-02-06-15-35-19.png)
-![](assets/2021-02-06-15-40-37.png)
+<img src="assets/2021-02-06-15-30-11.png" width="400">
+<img src="assets/2021-02-06-15-31-34.png" width="400">
+<img src="assets/2021-02-06-15-31-53.png" width="400">
+<img src="assets/2021-02-06-15-32-15.png" width="400">
+<img src="assets/2021-02-06-15-32-52.png" width="400">
+<img src="assets/2021-02-06-15-33-12.png" width="400">
+<img src="assets/2021-02-06-15-33-33.png" width="400">
+<img src="assets/2021-02-06-15-33-51.png" width="400">
+<img src="assets/2021-02-06-15-34-09.png" width="400">
+<img src="assets/2021-02-06-15-34-18.png" width="400">
+<img src="assets/2021-02-06-15-34-43.png" width="400">
+<img src="assets/2021-02-06-15-39-49.png" width="400">
+<img src="assets/2021-02-06-15-35-19.png" width="400">
+<img src="assets/2021-02-06-15-40-37.png" width="400">
 #### Almost finished!
-![](assets/2021-02-06-15-41-36.png)
-![](assets/2021-02-06-15-41-57.png)
-![](assets/2021-02-06-15-42-17.png)
-![](assets/2021-02-06-15-42-42.png)
-![](assets/2021-02-06-15-43-17.png)
-![](assets/2021-02-06-15-46-46.png)
+<img src="assets/2021-02-06-15-41-36.png" width="400">
+<img src="assets/2021-02-06-15-41-57.png" width="400">
+<img src="assets/2021-02-06-15-42-17.png" width="400">
+<img src="assets/2021-02-06-15-42-42.png" width="400">
+<img src="assets/2021-02-06-15-43-17.png" width="400">
+<img src="assets/2021-02-06-15-46-46.png" width="400">
 #### Set host to raspberry pi's ip address XXX.XXX.XXX.XXX for my network its 192.168.1.72
 ### Ip address = `192.168.1.72`
 ### Port = `1234`
 ### Sample rate = `0.25 MSPS`
-![](assets/2021-02-06-15-47-48.png)
+<img src="assets/2021-02-06-15-47-48.png" width="400">
 ### Hit play, if everything was setup correctly you should hear radio static!
 ### Success!
-![](assets/2021-02-06-15-59-45.png)
+<img src="assets/2021-02-06-15-59-45.png" width="400">
 
 ### Trouble shooting
 #### If you get an error like this one, 
@@ -66,7 +66,7 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 - check wifi/local system connectivity
 - Remember, only one person can login to a site at any time.  The SDR# software will hang if someone else is connected to the device.
 - NOTE: `sdr-sharp` often crashes if you dont hit `stop` before quitting as a habit always click stop before exiting 
-![](assets/2021-02-06-15-49-01.png)
+<img src="assets/2021-02-06-15-49-01.png" width="400">
 
      -----------------
 <br>
@@ -76,7 +76,7 @@ Each Mountain Top Raspberry Pi is a V3 Raspberry Pi with an RTL-SDR dognle attac
 # How to connect to web based camera system  
 ### Camera System (motionEye): 
 
- ![](2021-02-06-14-19-58.png)
+ <img src="2021-02-06-14-19-58.png" width="400">
 #### IP address + Port number 
 #### Note: the  "192.168.2.72' will be different for each network.
 <!-- ```bash -->
@@ -88,7 +88,7 @@ http://192.168.2.72:8765/
 
 ```
 
-![](assets/2021-02-06-14-21-26.png)
+<img src="assets/2021-02-06-14-21-26.png" width="400">
 ### Default admin account 
 #### Username
 ```bash
@@ -108,8 +108,8 @@ silkecom
 enterSATURN35**
 ```
 ### How to change the default password
-![](assets/2021-02-06-14-26-01.png)
-![](assets/2021-02-06-14-29-36.png)
+<img src="assets/2021-02-06-14-26-01.png" width="400">
+<img src="assets/2021-02-06-14-29-36.png" width="400">
 #### Note: "back up" before you make changes.
 
 ### If you set up motion detection, use email with the following SMTP info:
@@ -131,18 +131,18 @@ enterSATURN35**
 # How to connect to and toggle GPIOs
 
 ### Turn GPIOs on and off
-![](assets/2021-02-06-16-07-30.png)
-![](assets/2021-02-06-16-07-50.png)
+<img src="assets/2021-02-06-16-07-30.png" width="400">
+<img src="assets/2021-02-06-16-07-50.png" width="400">
 ### http://192.168.2.72:8000/app/gpio-header
 * ###### username 
 > `silkecom`
 *  ###### password 
 > `&57wavesHUMAN`
 
-![](assets/2021-02-06-16-08-13.png)
-![](assets/2021-02-06-16-10-09.png)
+<img src="assets/2021-02-06-16-08-13.png" width="400">
+<img src="assets/2021-02-06-16-10-09.png" width="400">
 ### `OUT` = gpio pin is `ON`, and `IN` = gpio pin if `OFF`
-![](assets/2021-02-06-16-11-52.png)
+<img src="assets/2021-02-06-16-11-52.png" width="400">
 ### Reference
 * GPIO Info: https://www.raspberrypi.org/documentation/usage/gpio/
 * How to drive a relay: https://projects-raspberry.com/raspberry-pi-driving-a-relay-using-gpio/
@@ -156,15 +156,15 @@ enterSATURN35**
 
 # Set Raspberry pis Hostname
 ### login to pi
-![](assets/2021-02-02-16-59-38.png)
+<img src="assets/2021-02-02-16-59-38.png" width="400">
 ### run `dietpi-config`
-![](assets/2021-02-02-17-03-48.png)
-![](assets/2021-02-02-17-04-10.png)
-![](assets/2021-02-02-17-04-38.png)
-![](assets/2021-02-02-17-04-54.png)
+<img src="assets/2021-02-02-17-03-48.png" width="400">
+<img src="assets/2021-02-02-17-04-10.png" width="400">
+<img src="assets/2021-02-02-17-04-38.png" width="400">
+<img src="assets/2021-02-02-17-04-54.png" width="400">
 ### change the hostname to what you want.
 #### to hit 'OK' press `TAB` once then `enter`
-![](assets/2021-02-02-17-06-14.png)
+<img src="assets/2021-02-02-17-06-14.png" width="400">
  
 -----
 
@@ -174,14 +174,14 @@ enterSATURN35**
 ```text
 4orderTERMS%%
 ```
-![](assets/2021-02-02-16-59-38.png)
+<img src="assets/2021-02-02-16-59-38.png" width="400">
 ### run `dietpi-config`
-![](assets/2021-02-02-17-03-48.png)
-![](assets/2021-02-02-17-04-10.png)
-![](assets/2021-02-02-17-04-38.png)
-![](assets/2021-02-02-17-08-25.png)
+<img src="assets/2021-02-02-17-03-48.png" width="400">
+<img src="assets/2021-02-02-17-04-10.png" width="400">
+<img src="assets/2021-02-02-17-04-38.png" width="400">
+<img src="assets/2021-02-02-17-08-25.png" width="400">
 ### enter you password , to hit 'OK' press `TAB` once then `enter` once
-![](assets/2021-02-02-17-08-42.png)
+<img src="assets/2021-02-02-17-08-42.png" width="400">
  
 -----
 
@@ -191,22 +191,22 @@ enterSATURN35**
 ```text
 4orderTERMS%%
 ```
-![](assets/2021-02-02-16-59-38.png)
+<img src="assets/2021-02-02-16-59-38.png" width="400">
 ### run `dietpi-config`
-![](assets/2021-02-02-17-03-48.png)
-![](assets/2021-02-02-17-12-34.png)
-![](assets/2021-02-02-17-12-55.png)
-![](assets/2021-02-02-17-13-10.png)
+<img src="assets/2021-02-02-17-03-48.png" width="400">
+<img src="assets/2021-02-02-17-12-34.png" width="400">
+<img src="assets/2021-02-02-17-12-55.png" width="400">
+<img src="assets/2021-02-02-17-13-10.png" width="400">
 ### change the ip address
-![](assets/2021-02-02-17-13-46.png)
+<img src="assets/2021-02-02-17-13-46.png" width="400">
 ### example:
-![](assets/2021-02-02-17-14-32.png)
-![](assets/2021-02-02-17-14-55.png)
+<img src="assets/2021-02-02-17-14-32.png" width="400">
+<img src="assets/2021-02-02-17-14-55.png" width="400">
 ### Done!
  
 # How to set webiopi password
 ###  type in to rpi bash `webiopi-passwd`
-![](assets/Screenshot_4.png)
+<img src="assets/Screenshot_4.png" width="400">
 
 -----
 # Advanced 
